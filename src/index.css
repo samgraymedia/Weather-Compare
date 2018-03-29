@@ -173,6 +173,11 @@ button:hover {
     width: 100%;
   }
   .margin{
-    margin-left:0;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 380px) {
+  .margin{
+    margin-left: 0px;
   }
 }
