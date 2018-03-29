@@ -71,8 +71,6 @@ body {
   width: calc(8.33% - 5px);
 }
 
-
-
 .place-temp {
   width: 300px;
   height: 300px;
@@ -131,6 +129,7 @@ label {
   padding-top: 20px;
   text-align: center;
 }
+
 input {
   width: 200px;
   padding: 10px 20px;
@@ -145,26 +144,30 @@ input {
   transition: all .3s;
   text-overflow: ellipsis;
 }
+
 input:focus {
   width: 400px;
 }
-input:focus + .label-txt {
+
+input:focus+.label-txt {
   font-size: 13px;
   -webkit-transform: translateY(-70px);
-          transform: translateY(-70px);
+  transform: translateY(-70px);
   -webkit-transition: all .3s;
   transition: all .3s;
   color: #9B9B9B;
 }
-input:focus + .label-txt {
+
+input:focus+.label-txt {
   font-size: 13px;
   -webkit-transform: translateY(-70px);
-          transform: translateY(-70px);
+  transform: translateY(-70px);
 }
-input:not(:placeholder-shown) + .label-txt {
+
+input:not(:placeholder-shown)+.label-txt {
   font-size: 13px;
   -webkit-transform: translateY(-70px);
-          transform: translateY(-70px);
+  transform: translateY(-70px);
 }
 
 .label-txt {
@@ -174,7 +177,7 @@ input:not(:placeholder-shown) + .label-txt {
   text-transform: uppercase;
   letter-spacing: 4px;
   -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  transform: translateY(-40px);
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -189,12 +192,14 @@ button {
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
 }
+
 button:hover {
   background: #107950;
   border-radius: 10px;
   color: white;
 }
-.error{
+
+.error {
   width: 100%;
   height: 100px;
   background-color: red;
@@ -204,8 +209,7 @@ button:hover {
   align-items: center;
 }
 
-
-.margin{
+.margin {
   margin-left: 140px;
 }
 
@@ -213,12 +217,13 @@ button:hover {
   .col {
     width: 100%;
   }
-  .margin{
+  .margin {
     margin-left: 150px;
   }
 }
+
 @media (max-width: 380px) {
-  .margin{
+  .margin {
     margin-left: 0px;
   }
 }
