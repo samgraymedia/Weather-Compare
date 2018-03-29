@@ -68,12 +68,12 @@ class App extends React.Component{
       });
     } else {
       this.setState({
-        OtherTemperature: undefined,
-        OtherCity: undefined,
-        OtherCountry: undefined,
-        OtherHumidity: undefined,
-        OtherDescription: undefined,
-        OtherError: "Please Enter The Vaules"
+        otherTemperature: undefined,
+        otherCity: undefined,
+        otherCountry: undefined,
+        otherHumidity: undefined,
+        otherDescription: undefined,
+        otherError: "Please Enter The Vaules"
       });
     }
 
