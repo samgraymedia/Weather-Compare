@@ -71,11 +71,7 @@ body {
   width: calc(8.33% - 5px);
 }
 
-@media (max-width: 460px) {
-  .col {
-    width: 100%;
-  }
-}
+
 
 .place-temp {
   width: 300px;
@@ -170,4 +166,13 @@ button:hover {
 
 .margin{
   margin-left: 140px;
+}
+
+@media (max-width: 770px) {
+  .col {
+    width: 100%;
+  }
+  .margin{
+    margin-left:0;
+  }
 }
