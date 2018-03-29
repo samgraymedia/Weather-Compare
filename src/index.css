@@ -126,16 +126,57 @@ body {
   display: block;
 }
 
-input {
-  width: 300px;
-  padding: 0 20px;
-  border: 1px solid #20a85f;
-  height: 20px;
-  margin: 10px 0;
-  transition: all 0.3 ease-in-out;
+label {
+  display: block;
+  padding-top: 20px;
+  text-align: center;
 }
-input:focus{
-  height: 30px;
+input {
+  width: 200px;
+  padding: 10px 20px;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #4A4A4A;
+  font-size: 28px;
+  outline: none;
+  color: #4A4A4A;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-overflow: ellipsis;
+}
+input:focus {
+  width: 400px;
+}
+input:focus + .label-txt {
+  font-size: 13px;
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #9B9B9B;
+}
+input:focus + .label-txt {
+  font-size: 13px;
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+}
+input:not(:placeholder-shown) + .label-txt {
+  font-size: 13px;
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+}
+
+.label-txt {
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 button {

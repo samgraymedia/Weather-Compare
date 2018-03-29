@@ -5,8 +5,14 @@ class Form extends React.Component{
     return(
       <form className="col col-2" onSubmit={this.props.getWeather}>
       <h4>Location 1:</h4>
-        <input type="text" name="city" placeholder="City..."/>
-        <input type="text" name="country" placeholder="Country..."/>
+        <label>
+          <input type="text" name="city" placeholder=" "/>
+          <div class="label-txt">City...</div>
+        </label>
+        <label>
+          <input type="text" name="country" placeholder=" "/>
+          <div class="label-txt">Country...</div>
+        </label>
         <button>Get Weather</button>
       </form>
     );
