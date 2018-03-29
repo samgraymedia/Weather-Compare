@@ -7,11 +7,11 @@ class OtherForm extends React.Component{
       <h4>Location 2:</h4>
         <label>
           <input type="text" name="otherCity" placeholder=" "/>
-          <div class="label-txt">City...</div>
+          <div className="label-txt">City...</div>
         </label>
         <label>
           <input type="text" placeholder=" " name="otherCountry"/>
-          <div class="label-txt">Country...</div>
+          <div className="label-txt">Country...</div>
         </label>
         <button>Get Weather</button>
       </form>
