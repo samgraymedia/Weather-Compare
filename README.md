@@ -6,5 +6,5 @@ npm install
 ```
 
 ```
-gulp
+npm start
 ```
